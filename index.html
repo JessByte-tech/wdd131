@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd131</title>
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Jessica Felix</title>
+
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals – Jessica Felix. A home page featuring information about me, my interests, and useful web development resources.">
+
+    <meta name="author" content="Jessica Felix">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-WDD131 - Jessica Felix
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="#">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">
+                Scripture
+            </a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Jessica Felix</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <p>
+                    My name is Jessica Felix. I am a student learning
+                    software development and web design. I enjoy learning
+                    new technology, creating websites, and developing my
+                    programming skills.
+                </p>
+
+                <img src="images/profile.jpg" alt="Jessica Felix">
+            </div>
+
+            <h3>Port Harcourt, Nigeria</h3>
+
+            <div class="location-content">
+                <img src="images/nigeria-flag.jpg" alt="Flag of Nigeria">
+
+                <p>
+                    Nigeria is a country in West Africa known for its
+                    diverse cultures, languages, natural resources, and
+                    growing technology industry. Port Harcourt is a major
+                    city in Rivers State.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/">
+                        MDN Web Docs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.w3schools.com/">
+                        W3Schools
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://css-tricks.com/">
+                        CSS-Tricks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/">
+                        GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://codepen.io/">
+                        CodePen
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Jessica Felix
+            🌸 Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #24577a;
+    --secondary-color: #333333;
+    --accent-color: #f2c94c;
+    --background-color: #ffffff;
+    --text-color: #222222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    margin: 0 0 20px;
+}
+
+.card {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 20px;
+    padding: 16px;
+}
+
+.about-content img {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card h3 {
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    margin: 0 20px;
+    padding-bottom: 6px;
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 20px;
+    padding: 15px 16px;
+    align-items: center;
+}
+
+.location-content img {
+    width: 140px;
+    height: auto;
+}
+
+.card ul {
+    padding: 100px 40px;
+    line-height: 1.9;
+}
+
+.card ul a {
+    color: #0000ee;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
