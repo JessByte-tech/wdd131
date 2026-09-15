@@ -1,0 +1,39 @@
+body {
+font-family: Arial, sans-serif;
+max-width: 600px;
+margin: 2rem auto;
+padding: 1rem;
+}
+
+main {
+padding: 1rem;
+}
+
+h1 {
+text-align: center;
+}
+
+input {
+padding: 0.5rem;
+}
+
+button {
+padding: 0.5rem;
+margin-left: 0.5rem;
+}
+
+ul {
+padding: 0;
+}
+
+li {
+list-style: none;
+margin: 0.5rem 0;
+padding: 0.5rem;
+background-color: #eee;
+}
+
+li button {
+float: right;
+margin: 0;
+}
